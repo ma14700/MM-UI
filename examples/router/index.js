@@ -1,21 +1,29 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '../../src/components/HelloWorld.vue'
-// import test from '../../packages/test.md'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/guid',
+      name: 'guid',
+      component: r => require.ensure([], () => r(require('../docs/guid.md')))
+    },
+    {
+      path: '/install',
+      name: 'install',
+      component: r => require.ensure([], () => r(require('../docs/install.md')))
+    },
+    {
+      path: '/alert',
+      name: 'alert',
+      component: r => require.ensure([], () => r(require('../docs/alert.md')))
     },
     {
       path: '/test',
       name: 'test',
-      component: r => require.ensure([], () => r(require('../../packages/test.md')))
-    }
+      component: r => require.ensure([], () => r(require('../../packages/test.vue')))
+    },
   ]
 })
