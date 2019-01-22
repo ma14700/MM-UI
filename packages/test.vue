@@ -5,15 +5,20 @@
 </template>
 
 <script>
-import WAlert from './alert/src/alert'
+// import WAlert from './alert/src/alert'
+import {getImg} from './mixins.js'
 export default {
     data(){
         return {
 
         }
     },
+    created() {
+        // console.log(WAlert)
+    },
+    mixins: [getImg],
     components: {
-        WAlert
+        // WAlert
     }
 }
 </script>

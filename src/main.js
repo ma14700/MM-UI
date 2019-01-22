@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VVUI from '../packages/index'
+import '../packages/theme-default/lib/index.css'
+
+Vue.use(VVUI)
 
 Vue.config.productionTip = false
 
