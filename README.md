@@ -33,8 +33,8 @@
 │   ├── index.js  
 │   ├── mixins.js  
 │   ├── test.vue  
-│   └── theme-default----------------组件css样式
-├── src  
+│   └── theme-default----------------组件css样式  
+├── src   
 │   ├── App.vue  
 │   ├── assets  
 │   ├── components  

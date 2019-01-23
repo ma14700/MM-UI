@@ -1,11 +1,11 @@
 <template>
     <div>
-        <w-alert></w-alert>
+        123
+        <m-alert></m-alert>
     </div>
 </template>
 
 <script>
-// import WAlert from './alert/src/alert'
 import {getImg} from './mixins.js'
 export default {
     data(){
@@ -14,11 +14,11 @@ export default {
         }
     },
     created() {
-        // console.log(WAlert)
+        
     },
     mixins: [getImg],
     components: {
-        // WAlert
+       
     }
 }
 </script>

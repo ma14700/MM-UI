@@ -25,5 +25,20 @@ export default new Router({
       name: 'test',
       component: r => require.ensure([], () => r(require('../../packages/test.vue')))
     },
+    {
+      path: '/start',
+      name: 'start',
+      component: r => require.ensure([], () => r(require('../docs/start.md')))
+    },
+    {
+      path: '/logs',
+      name: 'logs',
+      component: r => require.ensure([], () => r(require('../docs/logs.md')))
+    },
+    {
+      path: '/layout',
+      name: 'layout',
+      component: r => require.ensure([], () => r(require('../docs/layout.md')))
+    }
   ]
 })

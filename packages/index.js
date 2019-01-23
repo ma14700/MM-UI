@@ -1,10 +1,10 @@
 
-import WAlert from './alert/index'
+import MAlert from './alert/index'
 
 
 const components = [
 
-  WAlert,
+  MAlert,
 ]
 
 const install = function(Vue) {
@@ -20,5 +20,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  WAlert,
+  install,
+  MAlert,
 }
