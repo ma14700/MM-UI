@@ -1,9 +1,10 @@
 
 import MAlert from './alert/index'
+import MRow from './row/index'
 
 
 const components = [
-
+  MRow,
   MAlert,
 ]
 
@@ -22,4 +23,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   MAlert,
+  MRow
 }
