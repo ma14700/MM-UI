@@ -1,11 +1,12 @@
 
 import MAlert from './alert/index'
 import MRow from './row/index'
-
+import MCol from './col/index'
 
 const components = [
   MRow,
   MAlert,
+  MCol
 ]
 
 const install = function(Vue) {
@@ -23,5 +24,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   MAlert,
-  MRow
+  MRow,
+  MCol
 }
